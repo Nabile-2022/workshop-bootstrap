@@ -33,6 +33,39 @@ fit=no">
             </ul>
         </div>
     </nav>
+    <main class="container-fluid m-2">
+        <div class="row">
+            <div class="col d-flex justify-content-end">
+                <button class="btn btn-primary">Ajouter un nouveau collaborateur</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container-fluid">
+                <h1>Les collaborateurs</h1>
+                <form>
+                    <div class="form-group form-inline">
+                        <label class="col-4 text-right d-inline-block" for="nom-collaborateur">Rechercher un nom ou un prénom qui commence par : </label>
+                        <input type="text" class="form-control-sm m-2" />
+                        <input type="submit" class="btn btn-primary m-2" value="Rechercher" />
+                        <div class="form-check m-2">
+                            <input class="form-check-input" type="checkbox" value="" id="voir-desactive">
+                            <label class="form-check-label" for="voir-desactive">
+                                Voir les collaborateurs désactivés
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group form-inline">
+                        <label class="col-4 text-right d-inline-block" for="filtre-departement">Filtrer par département : </label>
+                        <select class="custom-select m-2" name="filtre-departement">
+                            <option value="comptabilite">Comptabilité</option>
+                            <option value="rh">Ressources Humaines</option>
+                            <option value="it">Informatique</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-
