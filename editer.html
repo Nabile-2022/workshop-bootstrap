@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-
+fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>SGP - Accueil</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">LOGO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Collaborateurs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Statistiques</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Activités</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container-fluid m-2">
+        <div class="row">
+            <div class="col">
+                <div class="col-4 align-items-center">
+                    <div
+                        style="width: 256px; height: 256px; border: solid 2px; display: flex; justify-content: center; align-items: center">
+                        PHOTO</div>
+                </div>
+            </div>
+            <div class="col">
+                <form>
+                    <div class="row mb-2">
+                        <div class="form-group form-inline">
+                            <h1>NOM Prénom - Matricule</h1>
+                            <div class="form-check m-2">
+                                <input class="form-check-input" type="checkbox" value="" id="desactiver">
+                                <label class="form-check-label" for="desactiver">
+                                    Désactiver
+                                </label>
+                            </div>
+                        </div>
+                        <div class="accordion col" id="formAccordion">
+                            <div class="card">
+                                <div class="card-header">
+                                    <button class="btn btn-link btn-block text-left" type="button"
+                                        data-toggle="collapse" data-target="#identite" aria-expanded="true"
+                                        aria-controls="identite">Identité</button>
+                                </div>
+                            </div>
+                            <div id="identite" class="collapse" aria-labelledby="identite" data-parent="#formAccordion">
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="civilite">Civilité</label>
+                                        <select name="civility" class="form-control">
+                                            <option value="homme">Homme</option>
+                                            <option value="femme">Femme</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="nom">Nom</label>
+                                        <input class="form-control" type="text" name="nom" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="prenom">Prénom</label>
+                                        <input class="form-control" type="text" name="prenom" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="date-naissance">Date de naissance</label>
+                                        <input class="form-control" type="date" name="date-naissance" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="adresse">Adresse</label>
+                                        <input class="form-control" type="text" name="adresse" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="numero-secu">Numéro de sécurité sociale</label>
+                                        <input class="form-control" type="text" name="numero-secu" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="telephone">Téléphone</label>
+                                        <input class="form-control" type="text" name="telephone" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <button class="btn btn-link btn-block text-left" type="button"
+                                        data-toggle="collapse" data-target="#poste" aria-expanded="true"
+                                        aria-controls="poste">Poste</button>
+                                </div>
+                            </div>
+                            <div id="poste" class="collapse" aria-labelledby="poste" data-parent="#formAccordion">
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="departement">Département</label>
+                                        <select name="departement" class="form-control">
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="nom-poste">Nom</label>
+                                        <input class="form-control" type="text" name="nom-poste" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <button class="btn btn-link btn-block text-left" type="button"
+                                        data-toggle="collapse" data-target="#coordonnees-bancaires" aria-expanded="true"
+                                        aria-controls="coordonnees-bancaires">Coordonnées bancaires</button>
+                                </div>
+                            </div>
+                            <div id="coordonnees-bancaires" class="collapse" aria-labelledby="coordonnees-bancaires"
+                                data-parent="#formAccordion">
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="iban">IBAN</label>
+                                        <input class="form-control" type="text" name="iban" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="bic">BIC</label>
+                                        <input class="form-control" type="text" name="bic" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row m-2 d-flex justify-content-end">
+                        <div class="form-group">
+                            <button class="btn btn-success" type="submit">Sauvegarder</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-
+J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
