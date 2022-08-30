@@ -39,30 +39,30 @@ fit=no">
                 <h1>Nouveau collaborateur</h1>
                 <div class="card m-4 p-4">
                     <form>
-                        <div class="form-group">
+                        <div class="form-group has-validation">
                             <label for="nom">Nom :</label>
-                            <input type="text" class="form-control" name="nom" />
-                            <p class="text-danger">Le nom est obligatoire</p>
+                            <input type="text" class="form-control is-invalid" name="nom" />
+                            <p class="invalid-feedback">Le nom est obligatoire</p>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group has-validation">
                             <label for="prenom">Prénom :</label>
-                            <input type="text" class="form-control" name="prenom" />
-                            <p class="text-danger">Le prénom est obligatoire</p>
+                            <input type="text" class="form-control is-invalid" name="prenom" />
+                            <p class="invalid-feedback">Le prénom est obligatoire</p>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group has-validation">
                             <label for="date-naissance">Date de naissance :</label>
-                            <input type="text" class="form-control" name="date-naissance" />
-                            <p class="text-danger">La date de naissance est obligatoire</p>
+                            <input type="text" class="form-control is-invalid" name="date-naissance" />
+                            <p class="invalid-feedback">La date de naissance est obligatoire</p>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group has-validation">
                             <label for="adresse">Adresse :</label>
-                            <input type="text" class="form-control" name="adresse" />
-                            <p class="text-danger">L'adresse est obligatoire</p>
+                            <input type="text" class="form-control is-invalid" name="adresse" />
+                            <p class="invalid-feedback">L'adresse est obligatoire</p>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group has-validation">
                             <label for="numero-secu">Numéro de sécurité sociale :</label>
-                            <input type="text" class="form-control" name="numero-secu" />
-                            <p class="text-danger">Le numéro de sécurité sociale est obligatoire</p>
+                            <input type="text" class="form-control is-invalid" name="numero-secu" />
+                            <p class="invalid-feedback">Le numéro de sécurité sociale est obligatoire</p>
                         </div>
                         <button type="button" class="btn btn-primary" data-toggle="modal"
                             data-target="#createModal">Créer</button>
